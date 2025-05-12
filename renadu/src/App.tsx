@@ -175,7 +175,7 @@ export default function Home() {
                   {product.name}
                 </h3>
                 <p className="text-[1rem] text-[#444] mb-[1rem] sm:max:text-[0.875rem]">
-                  {product.price}
+                  {/* {product.price ?? 0} */}
                 </p>
                 
               </div>
