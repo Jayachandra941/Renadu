@@ -5,22 +5,22 @@ const products = [
   {
     name: "Renadu Premium Chilli Powder",
     // price: "₹65",
-    image: "src/assets/images/chilli-powder.png",
+    image: "../assets/images/chilli-powder.png",
   },
   {
     name: "Renadu Premium Coriander Powder",
     // price: "₹33",
-    image: "src/assets/images/coriander-powder.png",
+    image: "../assets/images/coriander-powder.png",
   },
   {
     name: "Renadu Premium Spices",
     // price: "₹55",
-    image: "src/assets/images/spicies.png",
+    image: "../assets/images/spicies.png",
   },
   {
     name: "Renadu Premium Turmeric Powder",
     // price: "₹30",
-    image: "src/assets/images/turmeric-powder.png",
+    image: "../assets/images/turmeric-powder.png",
   },
 ];
 
@@ -57,14 +57,14 @@ export default function Home() {
     <main className="min-h-screen bg-white font-Figtree flex flex-col justify-between perspective-[1500px] animate-fadeIn">
       {/* Navbar */}
       <nav
-        className={`sticky top-0 z-50 w-full px-[2rem] py-[1rem] bg-gradient-to-r from-[#0d7b35] to-[#547d2e] shadow-md transition-transform duration-300 ${
+        className={`sticky top-0 z-50 w-full px-[2rem] py-[1rem] bg-gradient-to-r from-[#b3c2c2] to-[#b95151] shadow-md transition-transform duration-300 ${
           showNavbar ? "translate-y-0" : "-translate-y-full"
         } relative`}
       >
         <div className="flex justify-between items-center">
           <div className="flex items-center gap-[1rem]">
           <img
-            src="src/assets/images/renadu-logo.png"
+            src="../assets/images/renadu-logo.png"
             alt="Renadu Spices Logo"
             className="h-[2.5rem] object-contain"
           />
@@ -157,9 +157,9 @@ export default function Home() {
       {/* Best Sellers */}
       <div className="px-[1rem] py-[2rem] sm:max:px-[0.5rem]">
         <h2 className="text-[2rem] font-bold text-center text-[#2e2e2e] mb-[2rem] animate-flipUp sm:max:text-[1.5rem]">
-          Best Sellers
+          Products
         </h2>
-        <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-[2rem] sm:max:gap-[1rem]">
+        <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-[2rem] sm:max:gap-[1rem]">
           {products.map((product, index) => (
             <div
               key={index}
