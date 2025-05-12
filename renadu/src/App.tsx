@@ -94,7 +94,7 @@ export default function Home() {
           </button>
         </div>
         {menuOpen && (
-          <ul className="absolute top-[100%] left-0 w-full bg-[#4caf50] p-[1rem] flex flex-col gap-[0.75rem] text-white text-[1rem] font-medium animate-slideDown">
+          <ul className="absolute top-[100%] left-0 w-full bg-gradient-to-r from-[#b3c2c2] to-[#b95151] p-[1rem] flex flex-col gap-[0.75rem] text-white text-[1rem] font-medium animate-slideDown">
             <li className="cursor-pointer hover:text-black transition duration-200">
               Home
             </li>
